@@ -3,12 +3,12 @@ idf_component_register(
         "main.cpp"
         "core0.cpp"
         "core1.cpp"
-        "Adafruit_NeoPixel/Adafruit_NeoPixel.cpp"
-        "Adafruit_NeoPixel/esp.c"
+        "Adafruit_NeoPixel-master/Adafruit_NeoPixel.cpp"
+        "Adafruit_NeoPixel-master/esp.c"
 
     INCLUDE_DIRS
         "."
-        "Adafruit_NeoPixel"
+        "Adafruit_NeoPixel-master"
 
     REQUIRES
         arduino-esp32
@@ -17,4 +17,4 @@ idf_component_register(
 
 target_compile_options(${COMPONENT_LIB} PRIVATE
     -Wno-error=missing-field-initializers
-)      
+)
