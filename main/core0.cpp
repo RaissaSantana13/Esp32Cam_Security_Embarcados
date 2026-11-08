@@ -1,9 +1,10 @@
+
 #include "core_tasks.h"
 
 // core 0
-// PIR wifi webserver monitorar e sinalizar quando tiver monimento
+// PIR wifi webserver monitorar e sinalizar quando tiver movimento
 
-void monitorTask(void* pvParameters)
+void monitorTask(void *pvParameters)
 {
     while (true)
     {
